@@ -15,7 +15,7 @@ public class Scema {
     private double voltage , current , resistence;
 
 
-    @ElementCollection
+    @ElementCollection(fetch = FetchType.EAGER)
     private Set<String> wetnessLabel = new HashSet<>();
 
     public Set<String> getWetnessLabel() {
